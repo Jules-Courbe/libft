@@ -1,29 +1,21 @@
 ********************************************************************************
 *                                                                              *
-*   ft_atoi.c                                                                *
+*   ft_putchar.c                                                             *
 *                                                                              *
 *   By: mr-burns                                                              *
-*   Created: 2025/09/04 17:48:01                                          *
-*   Updated: 2025/09/04 17:48:01                                          *
+*   Created: 2025/09/04 17:48:54                                          *
+*   Updated: 2025/09/04 17:48:54                                          *
 *                                                                              *
 ********************************************************************************
-#include <stdio.h>
 
-int     ft_atoi(char *str)
+#include <unistd.h>
+void	ft_putchar(char c)
 {
-    int i = 0;
-    int res = 0;
-
-    while (str[i])
-    {
-        res = (res * 10) + (str[i] - '0');
-		i++;
-        printf("%d\n", res);
-    }
-    return (res);
+	write(1, &c, 1);
 }
-
 int main()
 {
-    printf("%d\n", (ft_atoi("56789")));
+	ft_putchar('h');
+	ft_putchar('\n');
+	ft_putchar('s');
 }
