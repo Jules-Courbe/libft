@@ -26,10 +26,8 @@ int is_palindrome(char *str)
  
 	while (str[i])
 	{ 
-	printf("%c & %c", str[i], str[j]);
 		if (str[i] != str[j])
 		{
-			printf("%c", j);
 			return (2); 
 		}
 		if (str[i] == str[j])
@@ -41,7 +39,7 @@ int is_palindrome(char *str)
 	return (0);
 }
 
-int main(void)
+int main(int argc, char **argv)
 {
-	printf("%d", (is_palindrome("hello")));
+	printf("%d", (is_palindrome(argv[1])));
 }
