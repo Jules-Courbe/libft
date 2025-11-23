@@ -22,6 +22,7 @@ int main()
 	if (f == NULL)
 	{
 		printf("Erreur d'ouverture du fichier");
+		return (1);
 	}
 	printf("%c", f);
 	fclose(f);
