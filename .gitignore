@@ -1,2 +1,2 @@
 *.out
-*.sw[op]
+*.c.sw[op]
