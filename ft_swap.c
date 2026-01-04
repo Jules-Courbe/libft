@@ -19,5 +19,5 @@ int	ft_swap(int a, int b)
 
 int main()
 {
-	printf("%d", (ft_swap(1, 9)));
+	printf("%d", (ft_swap(2, 3)));
 }
